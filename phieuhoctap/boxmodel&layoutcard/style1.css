@@ -1,0 +1,109 @@
+/* TODO 1 & Reset Box Model: Đưa margin, padding về 0 và áp dụng border-box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* TODO 2: Style cho thẻ body */
+body {
+  font-family: Arial;
+  background-color: #f5f5f5;
+}
+
+/* TODO 3: Style cho Header */
+#main-header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* TODO 4: Dùng class selector cho .nav-link */
+/* Yêu cầu: color: #333; text-decoration: none; padding: 10px 15px; */
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+/* TODO 5: Đổi font cho các thẻ tiêu đề (Đã sửa thành Arial để tránh lỗi phông) */
+h1,
+h2,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TODO 6: Dùng descendant selector cho nav a */
+/* Yêu cầu: display: inline-block; margin: 0 10px; */
+
+nav a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* TODO 7: Hiệu ứng khi rê chuột vào link */
+a:hover {
+  color: #ff6600;
+  background-color: #eee;
+}
+
+/* Căn giữa phần giới thiệu 
+
+.intro {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+/* Container chứa 3 bài viết - Sử dụng Flexbox để dàn hàng ngang */
+.posts {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Khoảng cách giữa các bài viết */
+  max-width: 1000px;
+  margin: 30px auto; /* Căn giữa màn hình */
+  padding: 0 20px; /* Lề 2 bên để không sát mép màn hình */
+}
+
+/* Từng khung bài viết (Card) */
+.card {
+  flex: 1; /* Tự động chia đều chiều rộng cho 3 card */
+  border: 1px solid #ddd;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.card h3 {
+  margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và đoạn văn */
+}
+
+/* Nút Đọc thêm */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+/* Đổi màu nút khi rê chuột */
+.btn:hover {
+  background: #0056b3;
+  color: white;
+}
+
+/* Style cho Footer */
+/* Style cho Footer */
+footer {
+  text-align: left; /* Giữ chữ ở bên trái */
+  position: fixed; /* Ghim cố định phần tử này */
+  bottom: 0; /* Ép sát xuống khoảng cách 0 so với đáy màn hình */
+  left: 0; /* Ép sát lề trái */
+  width: 100%; /* Chiếm toàn bộ chiều ngang */
+  padding: 10px 20px; /* Tạo một chút khoảng không cho chữ dễ nhìn */
+  background-color: #f5f5f5; /* Đồng màu với nền trang để chữ không bị đè lên nội dung khác */
+}
